@@ -5,6 +5,7 @@ using GraphNeuralNetworks
 using MLDatasets: Cora
 using Statistics, Random
 using CUDA
+using Test
 CUDA.allowscalar(false)
 
 function eval_loss_accuracy(X, y, ids, model, g)
